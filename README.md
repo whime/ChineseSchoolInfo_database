@@ -14,8 +14,8 @@
 + 访客窗口
 ![访客窗口](https://img-blog.csdnimg.cn/20181129100855701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaW1ld2Nt,size_16,color_FFFFFF,t_70)
 + 录入信息窗口，修改信息等窗口大同小异
-![录入信息窗口]
-(https://img-blog.csdnimg.cn/20181129100948159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaW1ld2Nt,size_16,color_FFFFFF,t_70)
+
+![录入信息窗口](https://img-blog.csdnimg.cn/20181129100948159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaW1ld2Nt,size_16,color_FFFFFF,t_70)
 
 #### 功能
 + 增删改查四个按钮，可以弹出一个窗口录入，更新，删除信息等。
