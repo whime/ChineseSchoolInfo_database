@@ -1,0 +1,5 @@
+1、首先使用mysql创建数据库，默认端口3306，数据库登陆用户名为root,密码为root.
+2、创建数据库university,use university,之后使用source命令执行university.sql文件，需要绝对路径。
+   如：source C:\users\asus\desktop\university.sql
+3、确保已安装了jdk，我这里是1.8版本，之后在终端运行java -jar ChineseSchoolInfo.jar，可以使用访客登陆查询，也可以使用whime账户,密码   whime作为管理员登陆，执行修改，删除等操作，管理员账户可以自行在university数据库的user表查看，当然可以自行通过修改user表修改管理员   账户密码。
+4、此外，ChineseSchoolInfo_lib是软件的依赖包，需要与jar文件放在一个目录下，data文件夹是此数据库用到的数据来源，report是生成报表的时   候用到的模板文件。

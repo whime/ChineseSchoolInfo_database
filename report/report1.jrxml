@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="da918732-f434-4d6f-ab25-4f4bed2ec67e">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="64657f96-f521-403b-a738-e72ff5d63595"/>
+	<queryString>
+		<![CDATA[select * from school_density order by density asc;]]>
+	</queryString>
+	<field name="cityName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="schoolcount" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="area" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="density" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="137" y="32" width="333" height="29" uuid="1cad7649-36ad-4a5b-b728-dd3e46d52dbd"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[	distribution of Chinese school]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="47" y="26" width="67" height="19" forecolor="#660000" uuid="1632659d-d63e-42dd-9a30-020e968731e2"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[city]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="26" width="95" height="19" forecolor="#660000" uuid="d5a446bf-4a32-4014-9af6-1e4fcd63c50e"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[school_count]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="26" width="86" height="19" forecolor="#660000" uuid="aca4973e-ad53-4f1f-b5d4-e7de31d9119b"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[area(sq.km.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="26" width="146" height="19" forecolor="#660000" uuid="e8da0c74-d705-4ef4-97b9-5b39c18763fd"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[area/school_count]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="47" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement x="47" y="21" width="123" height="20" uuid="63e3fbac-3326-46dc-af85-b6663be459f3"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cityName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="186" y="21" width="46" height="20" uuid="e591ab5d-cff0-474e-814c-16974efaf43c"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{schoolcount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="294" y="21" width="71" height="20" uuid="42cb1ecc-d737-4053-b7b8-88c6e2144e38"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{area}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="21" width="94" height="20" backcolor="#CCFFCC" uuid="cd24f163-7854-4ccb-b65a-c15127647877"/>
+				<textElement>
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{density}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="250" y="18" width="115" height="23" uuid="866b3dbd-dc64-4dcb-baac-7bdfe31e535f"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
