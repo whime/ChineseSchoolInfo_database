@@ -14,7 +14,8 @@
 + 访客窗口
 ![访客窗口](https://img-blog.csdnimg.cn/20181129100855701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaW1ld2Nt,size_16,color_FFFFFF,t_70)
 + 录入信息窗口，修改信息等窗口大同小异
-![录入信息窗口](https://img-blog.csdnimg.cn/20181129100948159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaW1ld2Nt,size_16,color_FFFFFF,t_70)
+![录入信息窗口]
+(https://img-blog.csdnimg.cn/20181129100948159.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3doaW1ld2Nt,size_16,color_FFFFFF,t_70)
 
 #### 功能
 + 增删改查四个按钮，可以弹出一个窗口录入，更新，删除信息等。
@@ -40,6 +41,7 @@
 + [用于界面美化的beautyEye包的简单使用](https://github.com/JackJiang2011/beautyeye/wiki/BeautyEye-L&F%E7%AE%80%E6%98%8E%E5%BC%80%E5%8F%91%E8%80%85%E6%8C%87%E5%8D%97)
 +  [导出表为excel文件,也就是jxl.jar的使用](https://blog.csdn.net/cy96151/article/details/52320024)
 + 报表工具JasperReport使用教程
+
 	1.http://www.open-open.com/doc/view/fe2068d9dfb64068bf5721d465562f8a
 	2.https://blog.csdn.net/acmman/article/details/51814181
 	3.https://blog.csdn.net/acmman/article/details/51814243
