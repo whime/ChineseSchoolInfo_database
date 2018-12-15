@@ -195,16 +195,14 @@ public class ResultTable extends JPanel{
 							} catch (SQLException e1) {
 							if(e1.getMessage().contains("for key 'PRIMARY'")){
 									JOptionPane.showMessageDialog(null, "该学校记录已存在！尝试修改!", "插入异常",JOptionPane.WARNING_MESSAGE);
+									tableModel.removeRow(tableModel.getRowCount()-1);
+									return;
 							}
 						}
 						
 						JOptionPane.showMessageDialog(null, "请继续完善学校信息。");
 	                }
 	                
-	                	
-	                	
-
-
 				}
 			});
 			
@@ -343,7 +341,12 @@ public class ResultTable extends JPanel{
 			{
 				//先录入学校名
 				schoolStr=JOptionPane.showInputDialog(null, "输入学校名称", "输入框", JOptionPane.PLAIN_MESSAGE);
+				
 				if(schoolStr==null)
+				{
+					return;//没有输入直接按返回按钮
+				}
+				else if(schoolStr.equals(""))
 				{
 					JOptionPane.showMessageDialog(null, "学校名不能为空！", "插入出错", JOptionPane.WARNING_MESSAGE);
 				}
@@ -352,6 +355,8 @@ public class ResultTable extends JPanel{
 					
 					String[] arr= {schoolStr};
 					tableModel.addRow(arr);
+					
+					
 					
 //					System.out.println(table.getRowCount());
 				}

@@ -158,7 +158,7 @@ public class guest_frame extends JFrame{
                 
             } 
             public void menuSelected(MenuEvent e){
-            	//导出当前选中的表格索引
+            	//导出当前选中的标签页索引对应的表格
 //                 int selectedIndex=tabbedPane.getSelectedIndex();
                 //获取当前组件,使用第一条语句不行，原因不知
 //               ResultTable RT=(ResultTable) tabbedPane.getTabComponentAt(selectedIndex);

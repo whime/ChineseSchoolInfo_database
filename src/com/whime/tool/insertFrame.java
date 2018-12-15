@@ -37,7 +37,9 @@ public class insertFrame extends queryFrame {
 					
 					if(!schoolName.getText().equals("学校名称"))
 					{
+						
 						try {
+							
 							Statement stmt=conn.createStatement();
 							n=stmt.executeUpdate(sql);
 							if(n==0)
@@ -129,10 +131,10 @@ public class insertFrame extends queryFrame {
 			}
 			else
 			{
-				sql+="综合类院校"+",";
+				sql+="'综合类院校'"+",";
 			}
 			
-			/*由于涉及上的错误，一开始没有考虑学校的隶属，其实是懒。。
+			/*由于设计上的错误，一开始没有考虑学校的隶属，其实是懒。。
 			 * 所以这里统一为插入的记录指定为隶属于教育部。
 			 * 这个系统瑕疵太多了，作为一个不完整的示例就行吧，不大想改。
 			 */
@@ -145,7 +147,7 @@ public class insertFrame extends queryFrame {
 			}
 			else
 			{
-				sql+="大学"+");";
+				sql+="'大学'"+");";
 			}
 			
 		}
